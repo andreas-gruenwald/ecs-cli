@@ -12,6 +12,6 @@ docker run -it -v ${PWD}:/ecs-cluster agruenwald/ecs-cli bash
  
 Now you can run:
 ```bash    
-    ews-cli -v
-    aws help
+ews-cli -v
+aws help
 ```
