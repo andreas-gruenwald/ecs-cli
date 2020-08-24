@@ -48,6 +48,6 @@ RUN apk add docker
 RUN wget https://github.com/aws/copilot-cli/releases/download/v0.2.0/copilot-linux-v0.2.0
 RUN mv copilot-linux-v0.2.0 /usr/local/bin/copilot && chmod +x /usr/local/bin/copilot
 
-RUN echo 'export PS1="\e[0;32m[\u@\h \W]\$ \e[0m"' > ~/bashrc
+RUN echo 'export PS1="\e[0;32m[\u@\h \W]\$ \e[0m"' > ~/.bashrc
 
 RUN apk add git
