@@ -48,6 +48,9 @@ RUN apk add docker
 RUN wget https://github.com/aws/copilot-cli/releases/download/v0.2.0/copilot-linux-v0.2.0
 RUN mv copilot-linux-v0.2.0 /usr/local/bin/copilot && chmod +x /usr/local/bin/copilot
 
+RUN wget https://github.com/rebuy-de/aws-nuke/releases/download/v2.14.0/aws-nuke-v2.14.0-linux-amd64
+RUN mv aws-nuke-v2.14.0-linux-amd64 /usr/local/bin/aws-nuke && chmod +x /usr/local/bin/aws-nuke
+
 RUN echo 'export PS1="\e[0;32m[\u@\h \W]\$ \e[0m"' > ~/.bashrc
 
 RUN apk add git

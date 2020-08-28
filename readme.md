@@ -1,12 +1,12 @@
-# AWS ECS related CLI Tools
+# AWS and ECS related CLI Deployment Tools
 
 This docker container provides an environment to access common 
 AWS tools that are used in conjunction with AWS ECS, such as
 
-- aws cli
-- ecs-cli
-- [AWS copilot](https://github.com/aws/copilot-cli)
-
+- [aws cli](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html) for any kind of AWS service operation 
+- [ecs-cli](https://github.com/aws/amazon-ecs-cli) for deployment of ECS services based on a local development
+- [AWS copilot](https://github.com/aws/copilot-cli) for deploying ECS fargate infrastructures (successor of ecs-clir)
+- [AWS Nuke](https://github.com/rebuy-de/aws-nuke) for resetting infrastructure
 
 ## How it works
 
@@ -25,4 +25,5 @@ Now you can run:
 ews-cli -v
 aws help
 copilot -h
+aws-nuke -h
 ```
